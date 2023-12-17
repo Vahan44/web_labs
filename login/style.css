@@ -1,0 +1,226 @@
+.body {
+    background-image: url('https://www.hiresafe.com/wp-content/uploads/2015/02/free-office-wallpaper-26001-26685-hd-wallpapers.jpg');
+    --color-primary: #009579;
+    --color-primary-dark: #036352;
+    --color-secondary: #252c6a;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 8px;
+
+    margin: 0;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    height:min-content;
+    min-width: 350px;
+    max-width: 400px;
+    position: absolute;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    background: #e9f4dd;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: min-content;
+
+}
+input{
+    margin-top: 10px;
+    
+}
+div {
+    justify-content: center;
+    text-align: center;
+}
+.button_div {
+padding: 15px;
+}
+.form__link {
+    margin-top: 0;
+    color: #252c6a;
+}
+
+.loginInput {
+    background: #d9e1d3;
+    width: 310px;
+    height: 35px;
+    border-radius: 8px;
+    justify-content: center;
+
+}
+
+input {
+    background: #d9e1d3;
+    width: 310px;
+    height: 35px;
+    border-radius: 8px;
+    justify-content: center;
+}
+.signIn {
+    text-align: center;
+}
+
+.submit {
+    width: 160px;
+    height: 40.2px;
+    text-align: center;
+    border-radius: 8px;
+    background: #009579;
+
+}
+
+.form__link {
+    margin-left: 20px;
+}
+
+#incorrect {
+    color: #cc3333;
+}
+
+.button_ {
+    margin-top: 330px;
+    width: 160px;
+    height: 40px;
+    background-color: #e1f1ee;
+    border-radius: 8px;
+}
+
+
+.unvisible {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    border: none;
+    background-color: #e9f4dd;
+}
+
+.err {
+    margin-left: 20px;
+    font-size: 15px;
+    color: #916161;
+}
+
+.tick {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.massageDiv {
+    min-height: 360px;
+    height: 360px;
+    min-width: 460px;
+    width: 600px;
+    background: #e9f4dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-size: cover;
+    box-shadow: #000000;
+}
+
+
+
+.loginBut {
+    width: 160px;
+    height: 40.2px;
+    border-radius: 8px;
+    background: #009579;
+}
+
+.butt_div {
+    background-color: #e9f4dd;
+    width: 200px;
+    height: 85px;
+    margin-top: -85px;
+    margin-left: 35%;
+}
+
+.lgBu {
+    width: 160px;
+    height: 40.2px;
+    border-radius: 8px;
+    background: #2DAF4A;
+}
+
+.icon {
+    height: 150px;
+    width: 150px;
+    border-radius: 60%;
+    margin-right: 500px;
+}
+
+.logout {
+    bottom: 120px;
+    width: 90px;
+    height: 40.2px;
+    border-radius: 8px;
+    background: #e4ddf4;
+    position: absolute;
+}
+
+
+
+#alert {
+    padding: 15px;
+    width: 400px;
+    border: 2px solid #033f41;
+    margin: auto;
+    margin-top: -150px;
+    border-radius: 4px;
+    text-align: center;
+    color: #f4f4dd;
+    background-color: #033f41;
+    transition-duration : 1s;
+  }
+
+
+
+  #close {
+    background-color: transparent;
+    border: none;
+    color: #d9e1d3;
+}
+.gender{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.gender div{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   width: 50px
+}
+
+.gender div input{
+    width: 30px;
+}
+
+a{
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}

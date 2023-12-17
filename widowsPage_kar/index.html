@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Window</title>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript">
+			function my_function1(){
+
+				let container = document.getElementById("container");
+
+				let x = getRandom(container.offsetLeft, container.offsetLeft+container.offsetWidth);
+				let y = getRandom(container.offsetTop, container.offsetTop+container.offsetHeight);
+				
+				console.log(x);
+				console.log(y);
+
+				let str = '<div class="window" style="left: '+x+'px; top: '+y+'px;">\
+					<div class="header">\
+						<span class="title">Window Title</span>\
+						<span><button>X</button></span>\
+						<span><button>&#9634</button></span>\
+						<span><button>_</button></span>\
+					</div>\
+					<div class="content">\
+						<h2>This is a header</h2>\
+						<p>This is a window text</p>\
+						<p>This is another window text</p>\
+					</div>\
+				</div>';
+
+				console.log(str);
+				container.innerHTML += str;
+			}
+			
+			function my_function2(){
+
+				let container = document.getElementById("container");
+
+				let x = getRandom(container.offsetLeft, container.offsetLeft+container.offsetWidth);
+				let y = getRandom(container.offsetTop, container.offsetTop+container.offsetHeight);
+				
+				console.log(x);
+				console.log(y);
+				
+				var mywindow = document.createElement("div");
+				container.append(mywindow);
+
+				let str = '<div class="window" style="left: '+x+'px; top: '+y+'px;">\
+					<div class="header">\
+						<span class="title">Window Title</span>\
+						<span><button>X</button></span>\
+						<span><button>&#9634</button></span>\
+						<span><button>_</button></span>\
+					</div>\
+					<div class="content">\
+						<h2>This is a header</h2>\
+						<p>This is a window text</p>\
+						<p>This is another window text</p>\
+					</div>\
+				</div>';
+
+				console.log(str);
+				container.innerHTML += str;
+			}
+
+			function getRandom(a,b){
+				var num = Math.random()*(b-a+1);
+				var intNum = num>0?Math.floor(num):Math.ceil(num);
+				return intNum+a;
+			}
+		</script>
+	</head>
+
+	<body>
+		<button onclick="my_function1()">Button1</button>
+		<button onclick="my_function2()">Button2</button>
+		<div class="container" id="container">
+			
+		</div>
+		
+		
+	</body>
+</html>

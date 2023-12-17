@@ -1,0 +1,29 @@
+.container {
+	border: 5px solid rgb(40, 23, 23);
+	height: 80%;
+	height: 800px;
+}
+
+.window {
+	border: 5px solid black;
+	height: 200px;
+	width: 300px;
+	margin: auto;
+	margin-top: 100px;
+	position: absolute;
+	background-color: aliceblue;
+}
+
+.window .header {
+	background-color: blue;
+	height: 11%;
+}
+
+.window .header span {
+	color: white;
+}
+
+.window .header button {
+	float: right;
+	height: 95%;
+}

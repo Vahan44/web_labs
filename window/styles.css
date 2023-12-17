@@ -1,0 +1,81 @@
+body{
+padding: 0%;
+margin: 0;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+align-items: center;
+justify-content: center;
+height: 100vh;
+overflow-y: hidden;
+background-color: #08293b;
+}
+
+.container{
+    height: 100%;
+}
+.container, .smallContainer{
+    background-color: rgb(74, 73, 96);
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s;
+}
+
+.smallContainer{
+  height: 200px;
+  position: absolute; 
+  width: 350px;
+  border: 1px solid rgb(90, 206, 255);
+  top: 10%;
+  left: 20%;
+  color: aliceblue;
+  font-size: 20px;
+}
+.container header, .smallContainer header{
+    display: flex;
+    justify-content: end;
+    background-color: #051C28;
+    height: 50px;
+    color: aliceblue;
+}
+
+.container header button, .smallContainer header button{
+    background: fixed;
+    border: none;
+    color: rgb(153, 155, 158);
+    font-size: 20px;
+    cursor: pointer;
+    width: 50px;
+    transition: 0.5s;
+}
+#x:hover{
+    background-color: rgb(255, 0, 0);
+color: aliceblue;
+}
+.container header button:hover, .smallContainer header button:hover{
+background-color: rgb(57, 57, 61);
+color: aliceblue;
+}
+
+
+.content{
+    text-align: center;
+    padding-top: 5%;
+    color: aliceblue;
+    font-weight: 1000;
+}
+
+
+.openModal{
+    width: 200px;
+    border: 3px solid rgb(90, 206, 255);
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    padding: 20px ;
+    box-shadow: 0 0 20px rgba(13, 0, 49, 0.5);
+    border-radius: 50px;
+    background-color: #051C28;
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+}
